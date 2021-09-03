@@ -1,0 +1,148 @@
+.mainPanal{
+    padding: 20px;
+}
+.collapsedRow_Off{
+    background-color: #6c757d; 
+    width: 100%;
+    height: 57px;
+    border-radius: 3px;
+}
+
+.collapsedRow_On{
+    background-color: #17a2b8; 
+    width: 100%;
+    height: 57px;
+    border-radius: 3px;
+}
+
+.collapseText{
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+.url{
+    background-color: rgb(202, 199, 199);
+    margin: 20px;
+    text-align: center;
+    height: 50px;
+}
+
+.card{
+    margin-top: -20px;
+    width: 100%;
+    border-radius: 0%;
+}
+.btn_Off{
+    background-color: #6c757d;
+    border-radius: 3px;
+    border-color: #6c757d;
+}
+.btn_On{
+    background-color: #17a2b8; 
+    border-radius: 3px;
+    border-color: #17a2b8;
+}
+.searchBox{
+    float: right; 
+    height: 35px;
+    margin-top: 1px;
+}
+
+
+
+
+
+/* checkbox styles */
+.checkbox_btn {
+    float: right;
+    margin-top: 5px;
+    padding-top: 5px;
+    margin-right: 4px;   
+}
+.toggle-switch {
+    height: 30px;
+    width: 150px;
+    display: inline-block;
+    position: relative;
+}
+.toggle-switch input {
+    display: none;
+}
+.toggle-switch input:checked + .slider {
+    background-color: #78cd51;
+    border-radius: 1rem;
+}
+.toggle-switch input:checked + .slider::after {
+    -webkit-transform: translateX(110px);
+    -ms-transform: translateX(110px);
+    transform: translateX(110px);
+}
+.toggle-switch .slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1F6183;
+    border-radius: 1rem;
+    border-color: white;
+    border-style: solid;
+    transition: 0.5s;
+}
+.toggle-switch .slider::after {
+    position: absolute;
+    content: '';
+    top: 1.5px;
+    height: 20px;
+    width: 30px;
+    background-color: white;
+    left: 1px;
+    bottom: 5px;
+    transition: 0.2s;
+    border-radius: 1rem;
+}
+
+.on
+{
+  display: none;
+}
+
+.on, .off
+{
+  color: white;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
+}
+
+input:checked+ .slider .on
+{display: block;}
+
+input:checked + .slider .off
+{display: none;}
+
+/*--------- END --------*/
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;}
+
+/* checkbox styles */
+
+
+/* .tblButton{
+    text-align: right;
+}
+
+.table_button_clr{
+    background-color: #c0d0d3;
+} */

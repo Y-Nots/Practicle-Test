@@ -1,0 +1,11 @@
+--Migration
+Add-Migration MyMigration -context ApplicationDbContext 
+
+---DB Update
+update-database -context ApplicationDbContext
+
+
+//Run this under repository
+--Scaffolding
+Scaffold-DbContext -UseDatabaseNames 'Data Source = {Your Datasource};Initial Catalog={Database}; user id={Your user}; password={Your password};' Microsoft.EntityFrameworkCore.SqlServer -OutputDir DB -f
+

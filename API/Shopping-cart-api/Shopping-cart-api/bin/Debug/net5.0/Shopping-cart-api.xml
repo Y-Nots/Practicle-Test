@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Shopping-cart-api</name>
+    </assembly>
+    <members>
+        <member name="M:Shopping_cart_api.Controllers.ProductsController.GetAll(System.Nullable{System.Int32})">
+            <summary>
+            Get all Products
+            </summary>
+            <remarks>
+            Get all Products
+            </remarks>
+            <returns></returns> 
+        </member>
+        <member name="M:Shopping_cart_api.Controllers.ProductsController.GetByID(System.Int64)">
+            <summary>
+            Get Product by ProductId
+            </summary>
+            <remarks>
+            Get the details of Product by ProductId
+            </remarks>
+            <returns></returns> 
+        </member>
+        <member name="M:Shopping_cart_api.Controllers.ProductsController.Create(InfrastructureLayer.ProductDM)">
+            <summary>
+            Add a new Product
+            </summary>
+            <remarks>
+            Create a new Product with the relevant details
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Shopping_cart_api.Controllers.ProductsController.Update(InfrastructureLayer.ProductDM,System.Int32)">
+            <summary>
+             Update a Product
+            </summary>
+            <remarks>
+            Update a Product with the relevant details
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Shopping_cart_api.Controllers.ProductsController.Delete(System.Int32)">
+            <summary>
+             Delete a Product
+            </summary>
+            <remarks>
+            Delete a Product with the relevant details
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Shopping_cart_api.Controllers.UserController.GetByemail(System.Int64)">
+            <summary>
+            Get  User by UserId
+            </summary>
+            <remarks>
+            Get the details of User by UserId
+            </remarks>
+            <returns></returns> 
+        </member>
+        <member name="M:Shopping_cart_api.Controllers.UserController.GetRolebyEmail(System.String)">
+            <summary>
+            Get selected employee
+            </summary>
+            <remarks>
+            Get the details of a particular User role using the User Email
+            </remarks>
+            <param name="email">Refers to the User Email</param>
+            <returns></returns>
+        </member>
+        <member name="M:Shopping_cart_api.Controllers.UserController.Create(InfrastructureLayer.UserDM,System.Boolean)">
+            <summary>
+            Add a new User
+            </summary>
+            <remarks>
+            Create a new User with the relevant details
+            </remarks>
+            <returns></returns>
+            POST: api/Users
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,120 @@
+<div class="mainPanal">
+
+    <!------------------------------------ Product Details ------------------------------------>
+    <div [ngClass]="(productDetailsIsCollapse==true)?'collapsedRow_On':'collapsedRow_Off'">
+        <button [ngClass]="(productDetailsIsCollapse==true)?'btn_On':'btn_Off'" class="btn btn-info" type="button"
+            data-toggle="collapse" data-target="#productDetails" aria-expanded="false" aria-controls="productDetails"
+            style="float: right;" (click)="arrowChange('cd')">
+            <i class="fas fa-chevron-up" *ngIf="cd_up" type="button" data-toggle="collapse"
+                data-target="#productDetails" aria-expanded="false" aria-controls="productDetails"></i>
+            <i class="fas fa-chevron-down" *ngIf="!cd_up" type="button" data-toggle="collapse"
+                data-target="#productDetails" aria-expanded="false" aria-controls="productDetails"></i>
+        </button>
+        <p class="collapseText">
+            <a [ngClass]="(productDetailsIsCollapse==true)?'btn_On':'btn_Off'" class="btn btn-secondary"
+                style="width:40px">
+                <span class="fas fa-user"></span>
+            </a>
+            Product Details:</p>
+    </div>
+
+    <div class="collapse show" id="productDetails">
+        <div class="card card-body">
+            <form [formGroup]="ProductDetailsForm" (ngSubmit)="onSubmit()">
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        Product Name:
+                        <input formControlName="product_name" type="text" class="form-control"
+                            placeholder="product name">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        Description:
+                        <input formControlName="description" type="text" class="form-control"
+                            placeholder="Description">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        Quantity:
+                        <input formControlName="quantity" type="number" class="form-control" placeholder="Quantity"
+                            min="0" oninput="validity.valid||(value='');">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        Color:
+                        <input formControlName="color" type="text" class="form-control"
+                            placeholder="color">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        Make:
+                        <input formControlName="make" type="text" class="form-control"
+                            placeholder="make">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        Model:
+                        <input formControlName="model" type="text" class="form-control"
+                            placeholder="model">
+                    </div>
+                </div>
+
+                 <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                       Product Image:
+                       <div class="input-group">
+                        <div class="custom-file">
+                            <input (change)="pickFile($event)" formContralName="image_url" type="file"
+                                class="custom-file-input" id="exampleInputFile">
+                            <label class="custom-file-label"
+                                for="exampleInputFile">{{fileDetails.fileName}}</label>
+                        </div>
+                        <div class="input-group-append">
+                            <span (click)="uploadImage()" class="input-group-text" id="">Upload</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        Purchase Price:<span style="color: red;">*</span>
+                        <input formControlName="price" type="number" class="form-control"
+                            placeholder="Purchase Price" min="0" oninput="validity.valid||(value='');">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        Category:<span style="color: red;">*</span>
+                        <ng-select [items]="categoryList" bindLabel="name" bindValue="id" placeholder="Select Category"
+                            appendTo="body" [multiple]="false" formControlName="category">
+                        </ng-select>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        Stock Status:<span style="color: red;">*</span>
+                        <ng-select [items]="stockStatusList" bindLabel="name" bindValue="id" placeholder="Select Stock Status"
+                            appendTo="body" [multiple]="false" formControlName="stock_status">
+                        </ng-select>
+                    </div>
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <button type="reset" class="btn btn-block btn-secondary ">Cancel</button>
+                    </div>
+                    <!-- <div class="col">
+                        <button type="button" (click)="deleteCustomer()"
+                            class="btn btn-block btn-danger ">Delete</button>
+                    </div> -->
+                    <div class="col">
+                        <button type="submit" class="btn btn-block btn-success ">Save</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+</div>

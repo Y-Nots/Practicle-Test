@@ -1,0 +1,410 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\NuTest\\NuTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\InfrastructureLayer\\InfrastructureLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\InfrastructureLayer\\InfrastructureLayer.csproj",
+        "projectName": "InfrastructureLayer",
+        "projectPath": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\InfrastructureLayer\\InfrastructureLayer.csproj",
+        "packagesPath": "C:\\Users\\SmartCloud\\.nuget\\packages\\",
+        "outputPath": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\InfrastructureLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SmartCloud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\NuTest\\NuTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\NuTest\\NuTest.csproj",
+        "projectName": "NuTest",
+        "projectPath": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\NuTest\\NuTest.csproj",
+        "packagesPath": "C:\\Users\\SmartCloud\\.nuget\\packages\\",
+        "outputPath": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\NuTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SmartCloud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\InfrastructureLayer\\InfrastructureLayer.csproj": {
+                "projectPath": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\InfrastructureLayer\\InfrastructureLayer.csproj"
+              },
+              "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\ServiceLayer\\ServiceLayer.csproj": {
+                "projectPath": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\ServiceLayer\\ServiceLayer.csproj"
+              },
+              "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\Shopping-cart-api\\Shopping-cart-api.csproj": {
+                "projectPath": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\Shopping-cart-api\\Shopping-cart-api.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.16.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\RepositoryLayer\\RepositoryLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\RepositoryLayer\\RepositoryLayer.csproj",
+        "projectName": "RepositoryLayer",
+        "projectPath": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\RepositoryLayer\\RepositoryLayer.csproj",
+        "packagesPath": "C:\\Users\\SmartCloud\\.nuget\\packages\\",
+        "outputPath": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\RepositoryLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SmartCloud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\InfrastructureLayer\\InfrastructureLayer.csproj": {
+                "projectPath": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\InfrastructureLayer\\InfrastructureLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\ServiceLayer\\ServiceLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\ServiceLayer\\ServiceLayer.csproj",
+        "projectName": "ServiceLayer",
+        "projectPath": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\ServiceLayer\\ServiceLayer.csproj",
+        "packagesPath": "C:\\Users\\SmartCloud\\.nuget\\packages\\",
+        "outputPath": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\ServiceLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SmartCloud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\RepositoryLayer\\RepositoryLayer.csproj": {
+                "projectPath": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\RepositoryLayer\\RepositoryLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\Shopping-cart-api\\Shopping-cart-api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\Shopping-cart-api\\Shopping-cart-api.csproj",
+        "projectName": "Shopping-cart-api",
+        "projectPath": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\Shopping-cart-api\\Shopping-cart-api.csproj",
+        "packagesPath": "C:\\Users\\SmartCloud\\.nuget\\packages\\",
+        "outputPath": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\Shopping-cart-api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SmartCloud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\InfrastructureLayer\\InfrastructureLayer.csproj": {
+                "projectPath": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\InfrastructureLayer\\InfrastructureLayer.csproj"
+              },
+              "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\ServiceLayer\\ServiceLayer.csproj": {
+                "projectPath": "C:\\Source Code\\Ape Company\\Practice\\Tiqri\\API\\Latest\\Shopping-cart-api\\ServiceLayer\\ServiceLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

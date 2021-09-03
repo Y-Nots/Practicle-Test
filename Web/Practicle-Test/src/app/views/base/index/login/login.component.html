@@ -1,0 +1,302 @@
+<br />
+<section class="container">
+  <!-- Login form -->
+  <div class="col-sm-6">
+    <form
+      style="width: 22rem;"
+      form [formGroup]="loginForm" (ngSubmit)="onSignInSubmit()"
+    >
+      <p class="h5 text-center mb-4">Sign in</p>
+
+      <div class="form-group">
+        <label for="loginEmailId">Email address</label>
+        <input
+         formControlName="email"
+          type="email"
+          class="form-control"
+          id="email"
+          aria-describedby="emailHelp"
+          placeholder="Enter email"
+          name="email"
+          mdbInputValidate
+          [email]="true"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input
+         formControlName="password"
+          type="password"
+          class="form-control"
+          id="Password"
+          name="Password"
+          autocomplete="current-password"
+          placeholder="Password"
+        />
+      </div>
+
+      <div class="text-center">
+        <button
+          type="submit"
+          class="btn btn-primary waves-light mx-2"
+          id="loginButton"
+          mdbRippleRadius
+        >
+          Login
+        </button>
+
+<br/><br/>
+<hr>
+
+
+      </div>
+    </form>
+  </div>
+
+
+  
+
+
+  <br />
+  <div class="row">
+    <!------------------------------------ Register as Seller ------------------------------------>
+    <div class="col-md-3 col-sm-4">
+
+        <a
+          data-toggle="modal"
+          data-target="#createSellerForm"
+          style="color: dodgerblue;"
+          >Register as Seller</a
+        >
+
+    </div>
+  
+    <!------------------------------------  Register as Buyer ------------------------------------>
+    <div class="col-md-3 col-sm-4">
+        <a
+          data-toggle="modal"
+          data-target="#createBuyerForm"
+          style="color: dodgerblue;"
+          >Register as Buyer</a
+        >
+    </div>
+  </div>
+
+ <!-- Login form -->
+
+  <!--Modal: Register Form-->
+  <div
+    class="modal fade"
+    id="createSellerForm"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="myModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog cascading-modal" role="document">
+      <form (ngSubmit)="onSignupSeller()" [formGroup]="registerSellerDetailsForm">
+        <div class="modal-content">
+          <div class="modal-header light-blue darken-3 white-text">
+            <h4 class="title"><i class="fa fa-user-plus"></i> Register Seller</h4>
+            <button
+              type="button"
+              class="close waves-effect waves-light"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div
+              class="alert alert-danger"
+              role="alert"
+              *ngIf="errorInUserCreate"
+            >
+              {{ errorMessage.message }}
+            </div>
+            <div class="form-group form-sm" 
+      >
+              <label for="Shop">Your Shop Name</label>
+              <input
+                mdbActive
+                type="text"
+                id="shop_name"
+                class="form-control"
+                formControlName="shop_name"
+                name="shop_name"
+                placeholder="Enter Shop Name"
+              />
+            </div>
+            <div class="form-group form-sm"
+            >
+              <label for="emailId">Your email</label>
+              <input
+                mdbActive
+                type="email"
+                id="email"
+                class="form-control"
+                name="email"
+                placeholder="Enter email"
+                formControlName="email"
+              />
+            </div>
+            <div class="form-group form-sm" >
+              <label for="mobile">Your Contact Number</label>
+              <input
+                mdbActive
+                type="number"
+                id="mobile"
+                class="form-control"
+                name="mobile"
+                formControlName="mobile"
+                placeholder="Enter Contact Number"
+              />
+            </div>
+            <div class="form-group form-sm" >
+              <label for="password">password</label>
+              <input
+                mdbActive
+                type="password"
+                id="password"
+                class="form-control"
+                name="password"
+                placeholder="Password"
+                formControlName="password"
+              />
+            </div>
+            <div class="text-center mt-2">
+              <button
+                class="btn btn-info waves-light"
+                id="signUpButton"
+                mdbRippleRadius
+              >
+                Sign up
+                <i class="fa fa-sign-in ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+  
+  <!-- Login form -->
+
+  <!--Modal: Register Form-->
+  <div
+    class="modal fade"
+    id="createBuyerForm"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="myModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog cascading-modal" role="document">
+      <form (ngSubmit)="onSignupBuyer()" [formGroup]="registerBuyerDetailsForm">
+        <div class="modal-content">
+          <div class="modal-header light-blue darken-3 white-text">
+            <h4 class="title"><i class="fa fa-user-plus"></i> Register Buyer</h4>
+            <button
+              type="button"
+              class="close waves-effect waves-light"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div
+              class="alert alert-danger"
+              role="alert"
+              *ngIf="errorInUserCreate"
+            >
+              {{ errorMessage.message }}
+            </div>
+            <div class="form-group form-sm" 
+      >
+              <label for="First Name">Your First Name</label>
+              <input
+                mdbActive
+                type="text"
+                id="first_name"
+                class="form-control"
+                formControlName="first_name"
+                name="first_name"
+                placeholder="Enter First Name"
+              />
+            </div>
+
+            <div class="form-group form-sm" 
+            >
+                    <label for="Last Name">Your Last Name</label>
+                    <input
+                      mdbActive
+                      type="text"
+                      id="last_name"
+                      class="form-control"
+                      formControlName="last_name"
+                      name="last_name"
+                      placeholder="Enter Last Name"
+                    />
+                  </div>
+
+            <div class="form-group form-sm"
+            >
+              <label for="emailId">Your email</label>
+              <input
+                mdbActive
+                type="email"
+                id="email"
+                class="form-control"
+                name="email"
+                placeholder="Enter email"
+                formControlName="email"
+              />
+            </div>
+            <div class="form-group form-sm" >
+              <label for="mobile">Your Contact Number</label>
+              <input
+                mdbActive
+                type="number"
+                id="mobile"
+                class="form-control"
+                name="mobile"
+                formControlName="mobile"
+                placeholder="Enter Contact Number"
+              />
+            </div>
+            <div class="form-group form-sm" >
+              <label for="password">password</label>
+              <input
+                mdbActive
+                type="password"
+                id="password"
+                class="form-control"
+                name="password"
+                placeholder="Password"
+                formControlName="password"
+              />
+            </div>
+            <div class="text-center mt-2">
+              <button
+                class="btn btn-info waves-light"
+                id="signUpButton"
+                mdbRippleRadius
+              >
+                Sign up
+                <i class="fa fa-sign-in ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+</section>
+<br />
+<br />
+<br />

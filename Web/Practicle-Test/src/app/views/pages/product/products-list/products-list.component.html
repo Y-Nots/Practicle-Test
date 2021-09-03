@@ -1,0 +1,69 @@
+<div class="mainPanal">
+
+    <div [ngClass]="(ProductIsCollapse==true)?'collapsedRow_On':'collapsedRow_Off'">
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <p class="collapseText">
+                    <a [ngClass]="(ProductIsCollapse==true)?'btn_On':'btn_Off'" 
+                        class="btn btn-secondary" style="width:40px">
+                        <span class="fa fa-tags"></span>
+                    </a>
+                    Products</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <button *ngIf="currentPermission.Product.can_add" [ngClass]="(ProductIsCollapse==true)?'btn_On':'btn_Off'"
+                class="btn btn-info" type="button" style="float: right;" (click)="addProduct()" title="Add Product">
+                    <i class="fas fa-plus" type="button" data-toggle="collapse"></i>
+                </button>
+                <input type="text" class="form-control col-6 searchBox" placeholder="Filter" 
+                [(ngModel)]="search_text" (keyup)="onSearchChange()" >         
+            </div>
+        </div>
+    </div>
+        
+
+
+
+        
+
+
+    <div class="card">
+
+        <!-- /.card-header -->
+        <div class="card-body">
+            <table id="producttbl" class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let list of productList">
+                        <td>{{ list.product_name }}</td>
+                        <td>{{ list.description }}</td>
+                        <td>{{ list.category }}</td>
+                        <td>{{ list.price }}</td>
+                        <td>{{ list.quantity }}</td>
+                        <td class="tblButton">
+                            <button type="button" title="Edit Product" 
+                                class="btn table_button_clr" (click)="editProduct(list)">
+                                <i class="fas fa-pencil-alt"></i>   
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+
+    
+</div>

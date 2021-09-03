@@ -1,0 +1,9 @@
+C:\Source Code\Ape Company\Practice\Tiqri\API\Latest\Shopping-cart-api\InfrastructureLayer\bin\Release\netcoreapp3.1\InfrastructureLayer.deps.json
+C:\Source Code\Ape Company\Practice\Tiqri\API\Latest\Shopping-cart-api\InfrastructureLayer\bin\Release\netcoreapp3.1\InfrastructureLayer.dll
+C:\Source Code\Ape Company\Practice\Tiqri\API\Latest\Shopping-cart-api\InfrastructureLayer\bin\Release\netcoreapp3.1\InfrastructureLayer.pdb
+C:\Source Code\Ape Company\Practice\Tiqri\API\Latest\Shopping-cart-api\InfrastructureLayer\obj\Release\netcoreapp3.1\InfrastructureLayer.csprojAssemblyReference.cache
+C:\Source Code\Ape Company\Practice\Tiqri\API\Latest\Shopping-cart-api\InfrastructureLayer\obj\Release\netcoreapp3.1\InfrastructureLayer.AssemblyInfoInputs.cache
+C:\Source Code\Ape Company\Practice\Tiqri\API\Latest\Shopping-cart-api\InfrastructureLayer\obj\Release\netcoreapp3.1\InfrastructureLayer.AssemblyInfo.cs
+C:\Source Code\Ape Company\Practice\Tiqri\API\Latest\Shopping-cart-api\InfrastructureLayer\obj\Release\netcoreapp3.1\InfrastructureLayer.csproj.CoreCompileInputs.cache
+C:\Source Code\Ape Company\Practice\Tiqri\API\Latest\Shopping-cart-api\InfrastructureLayer\obj\Release\netcoreapp3.1\InfrastructureLayer.dll
+C:\Source Code\Ape Company\Practice\Tiqri\API\Latest\Shopping-cart-api\InfrastructureLayer\obj\Release\netcoreapp3.1\InfrastructureLayer.pdb

@@ -1,0 +1,119 @@
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="javascript:;;">Online Shop</a>
+
+  <!-- Collapse button -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#basicExampleNav"
+    aria-controls="basicExampleNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="javascript:;;" [routerLink]="['/']"
+          >{{ this.translate.data["HOME"] | translate }}
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="jaascript:;;"
+          [routerLink]="['/products/all-products']"
+          >PRODUCTS</a
+        >
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li> -->
+    </ul>
+    <!-- Links -->
+
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item" *ngIf="!this.jwt_token && !this.is_Loginhide">
+        <a
+          class="nav-link"
+          href="jaascript:;;"
+          [routerLink]="['/login']"
+          >LOGIN</a
+        >
+      </li>
+
+      <li class="nav-item" *ngIf="this.jwt_token && this.is_Loginhide">
+        <a
+          class="nav-link"
+          href="jaascript:;;"
+          (click)="LogOutClick()"
+          >LOGOUT</a
+        >
+      </li>
+      
+      <li class="nav-item">
+        <div>
+          <a
+            class="nav-link"
+            href="javascript:;;"
+            [routerLink]="['/products/cart-items']"
+          >
+            <i class="fa fa-shopping-cart">
+              <span class="mt-2">
+                {{ productService.getLocalCartProducts().length }}</span
+              >
+            </i>
+          </a>
+        </div>
+      </li>
+      <!-- <li class="nav-item" *ngIf="authService.isLoggedIn$ | async">
+        <a class="nav-link" [routerLink]="['/users']">
+          <i class="fa fa-user mr-1"></i
+          >{{ this.translate.data["MYACCOUNT"] | translate }}</a
+        >
+      </li> -->
+      
+      <!-- <li class="nav-item" *ngIf="authService.isLoggedOut$ | async">
+        <a class="nav-link" [routerLink]="['/login']">
+          <i class="fa fa-sign-in mr-1"></i>
+          {{ this.translate.data["SIGNIN"] | translate }}</a
+        >
+      </li>
+      <li class="nav-item" *ngIf="authService.isLoggedIn$ | async">
+        <a class="nav-link" (click)="logout()">
+          <i class="fa fa-sign-in mr-1"></i
+          >{{ this.translate.data["LOGOUT"] | translate }}</a
+        >
+      </li> -->
+    </ul>
+  </div>
+  <!-- Collapsible content -->
+</nav>
+<!--/.Navbar-->
+
+<!-- Theme Template -->
+<ng-template #themeTemplate let-item="item">
+  <div
+    class="col-sm hover-effect"
+    data-toggle="tooltip"
+    data-placement="bottom"
+    [title]="item.title"
+    style="padding: 0;"
+  >
+    <div class="color-container">
+      <div
+        class="colorDiv {{ item.color }}"
+        (click)="updateTheme(item.id)"
+      ></div>
+    </div>
+  </div>
+</ng-template>
